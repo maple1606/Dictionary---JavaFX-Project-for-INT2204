@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import main.Constants?>
+
+<AnchorPane 
+  id = "anchorPane" 
+  prefHeight="640" prefWidth="1024" 
+  xmlns="http://javafx.com/javafx/8" 
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="main.UI.Controller.Screens.Game.OrderGame" 
+  stylesheets="resources/css/game.css">
+  <ImageView fx:id="gameMascot" fitWidth="213.33" fitHeight="213.33"
+             layoutX="14.93" layoutY="105.96"
+             preserveRatio="true">
+    <Image url="resources/image/bearGlasses.png"/>
+  </ImageView>
+
+  <HBox fx:id="boxContainer" 
+        layoutX="241" layoutY="130"
+        >
+  </HBox>
+
+  <Button fx:id="optBox1" alignment="CENTER" 
+          layoutX="88" layoutY="341.0"
+          mnemonicParsing="false" onAction="#selectOption"
+          prefWidth="124" prefHeight="166"
+          styleClass="opt-box"/>
+
+    <Button fx:id="optBox2" alignment="CENTER" 
+          layoutX="241" layoutY="341.0"
+          mnemonicParsing="false" onAction="#selectOption"
+          prefWidth="124" prefHeight="166"
+          styleClass="opt-box"/>
+
+    <Button fx:id="optBox3" alignment="CENTER" 
+          layoutX="393" layoutY="341.0"
+          mnemonicParsing="false" onAction="#selectOption"
+          prefWidth="124" prefHeight="166"
+          styleClass="opt-box"/>
+    
+    <Button fx:id="optBox4" alignment="CENTER" 
+          layoutX="545" layoutY="341.0"
+          mnemonicParsing="false" onAction="#selectOption"
+          prefWidth="124" prefHeight="166"
+          styleClass="opt-box"/>
+
+    <Button fx:id="optBox5" alignment="CENTER" 
+          layoutX="697" layoutY="341.0"
+          mnemonicParsing="false" onAction="#selectOption"
+          prefWidth="124" prefHeight="166"
+          styleClass="opt-box"/>
+
+    <Button fx:id="optBox6" alignment="CENTER" 
+          layoutX="849" layoutY="341.0"
+          mnemonicParsing="false" onAction="#selectOption"
+          prefWidth="124" prefHeight="166"
+          styleClass="opt-box"/>
+
+    <Button fx:id="submit" alignment="CENTER" 
+          layoutX="468" layoutY="552"
+          mnemonicParsing="false" onAction="#submit"
+          text="Submit" textAlignment="CENTER" 
+          prefWidth="124" prefHeight="49"
+          wrapText="true" styleClass="pink-button"/>
+
+     <Text fx:id="index" layoutX="461" layoutY="55"
+          style="-fx-font-size: 17.78px; -fx-font-weight: bold;"/> 
+
+     <Text fx:id="timerLabel" layoutX="950" layoutY="28" 
+                  style="-fx-font-size: 13.518px;"/>
+
+    <ImageView fitWidth="17.07" fitHeight="17.07"
+             layoutX="929" layoutY="15"
+             preserveRatio="true">
+      <Image url="resources/icons/clock.png"/>
+    </ImageView>
+        
+</AnchorPane>
+    

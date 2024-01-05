@@ -1,0 +1,50 @@
+#anchorPane {
+    -fx-background-color: #f0f0f0;
+}
+
+.delete-text-flow {
+    -fx-font-size: 15px;
+    -fx-text-fill: rgba(0, 0, 0, 0.8);
+    -fx-text-alignment: center;
+}
+
+
+.contribute-text-flow {
+    -fx-font-size: 15px;
+    -fx-font-family: "Montserrat SemiBold";
+    -fx-text-fill: rgba(0, 0, 0, 0.8);
+}
+
+
+.pink-button {
+    -fx-background-radius: 15px;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #FF968C 0%, #FF968C 8.01%, #FF4D56 56.95%);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Montserrat SemiBold";
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+}
+
+.cancel-button {
+    -fx-background-radius: 15px;
+    -fx-background-color: white;
+    -fx-text-fill: rgba(0, 0, 0, 0.8);
+    -fx-font-size: 14px;
+    -fx-font-family: "Montserrat SemiBold";
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+}
+
+.cancel-button:hover {
+    -fx-border-color: #FF7568;
+    -fx-border-width: 3px;
+    -fx-border-radius: 15px;
+    -fx-background-radius: 15px;
+    -fx-background-color: white;
+    -fx-text-fill: rgba(0, 0, 0, 0.8);
+    -fx-font-size: 14px;
+    -fx-font-family: "Montserrat SemiBold";
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+}

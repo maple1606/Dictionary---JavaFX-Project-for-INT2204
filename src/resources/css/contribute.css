@@ -1,0 +1,56 @@
+#anchorPane {
+    -fx-background-color: #f0f0f0;
+}
+
+.transparent-box {
+    -fx-fill: #f0f0f0;
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #f0f0f0;
+}
+
+.word-field {
+    -fx-border-radius: 20px;
+    -fx-border-color: #e4e4e4;
+    -fx-border-width: 12px; 
+    -fx-font-size: 16px;
+    -fx-background-color: #e4e4e4; 
+    -fx-fill: #e4e4e4;
+    -fx-text-fill: #4e4e4e;
+    -fx-arc-height: 20px;
+    -fx-arc-width: 20px;
+    -fx-background-radius: 20px; 
+}
+
+.select-box {
+    -fx-background-radius: 13.6px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 13px;
+    -fx-arc-height: 13.6px;
+    -fx-arc-width: 13.6px;
+    -fx-border-color: #fff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 13.6px;
+}
+
+.select-box:hover {
+    -fx-background-radius: 13.6px;
+    -fx-border-color: #FF7568;
+    -fx-border-width: 4px;
+    -fx-border-radius: 13.6px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 13px;
+    -fx-arc-height: 13.6px;
+    -fx-arc-width: 13.6px;
+}
+
+.pink-button {
+    -fx-background-radius: 13.6px;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #FF968C 0%, #FF968C 8.01%, #FF4D56 56.95%);
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-family: "Montserrat SemiBold";
+    -fx-arc-height: 13.6px;
+    -fx-arc-width: 13.6px;
+}

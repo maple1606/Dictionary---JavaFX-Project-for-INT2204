@@ -1,0 +1,27 @@
+#anchorPane {
+    -fx-background-color: #f0f0f0;
+}
+
+.select-box {
+    -fx-background-radius: 30px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 16.36px;
+    -fx-arc-height: 30px;
+    -fx-arc-width: 30px;
+    -fx-border-color: #fff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 30px;
+}
+
+.select-box:hover {
+    -fx-background-radius: 30px;
+    -fx-border-color: #FF7568;
+    -fx-border-width: 4px;
+    -fx-border-radius: 30px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 16.36px;
+    -fx-arc-height: 30px;
+    -fx-arc-width: 30px;
+}

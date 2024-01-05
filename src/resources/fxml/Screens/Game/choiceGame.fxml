@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import main.Constants?>
+
+<AnchorPane 
+  id = "anchorPane" 
+  prefHeight="640" prefWidth="1024" 
+  xmlns="http://javafx.com/javafx/8" 
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="main.UI.Controller.Screens.Game.ChoiceGame" 
+  stylesheets="resources/css/game.css">
+  <Rectangle
+        layoutX="271.64" layoutY="151.47" 
+        width="551.82" height="141.51" 
+        styleClass="ques-box" />
+
+  <Button fx:id="quesBox" alignment="CENTER" 
+          mnemonicParsing="false"
+          layoutX="386" layoutY="151.47" 
+          prefWidth="431" prefHeight="141.51" 
+          wrapText="true" styleClass="ques-box" />
+
+  <ImageView fx:id="gameMascot" fitWidth="227.56" fitHeight="227.56"
+             layoutX="177.07" layoutY="97.42"
+             preserveRatio="true">
+    <Image url="resources/image/catGlasses.png"/>
+  </ImageView>
+         
+  <Button fx:id="ansBoxA" alignment="CENTER" 
+          layoutX="189.87" layoutY="336.36"
+          mnemonicParsing="false" onAction="#selectOption"
+          prefWidth="315.02" prefHeight="96.71"
+          wrapText="true" styleClass="opt-box"/>
+
+   <Button fx:id="ansBoxB" alignment="CENTER" 
+          layoutX="532.62" layoutY="336.36"
+          mnemonicParsing="false" onAction="#selectOption"
+          prefWidth="315.02" prefHeight="96.71"
+          wrapText="true" styleClass="opt-box"/>
+
+  <Button fx:id="ansBoxC" alignment="CENTER" 
+          layoutX="189.87" layoutY="454.4"
+          mnemonicParsing="false" onAction="#selectOption"
+          prefWidth="315.02" prefHeight="96.71"
+          styleClass="opt-box"/>
+
+  <Button fx:id="ansBoxD" alignment="CENTER" 
+          layoutX="532.62" layoutY="454.4"
+          mnemonicParsing="false" onAction="#selectOption"
+          prefWidth="315.02" prefHeight="96.71"
+          styleClass="opt-box"/>
+
+  <Text fx:id="index" layoutX="461" layoutY="55"
+          style="-fx-font-size: 17.78px; -fx-font-weight: bold;"/> 
+
+  <Text fx:id="timerLabel" layoutX="780" layoutY="141" 
+                  style="-fx-font-size: 13.518px;"/>
+
+  <ImageView fitWidth="17.07" fitHeight="17.07"
+             layoutX="759" layoutY="128"
+             preserveRatio="true">
+        <Image url="resources/icons/clock.png"/>
+  </ImageView>
+
+</AnchorPane>
+    

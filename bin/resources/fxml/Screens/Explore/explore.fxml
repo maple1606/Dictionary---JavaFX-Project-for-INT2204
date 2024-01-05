@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import main.Constants?>
+
+<AnchorPane 
+  fx:id = "anchorPane" 
+  prefHeight="640" prefWidth="1024" 
+  xmlns="http://javafx.com/javafx/8" 
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="main.UI.Controller.Screens.Explore.ExploreControl"
+  stylesheets="resources/css/explore.css"
+  >
+
+   <ImageView fx:id="image" fitWidth="256" fitHeight="256"
+                layoutX="792" layoutY="372"
+                preserveRatio="true">
+        <Image url="resources/image/catDictionary.png"/>
+    </ImageView>
+
+    <ImageView fx:id="noti" fitWidth="50" fitHeight="50"
+             layoutX="834" layoutY="41"
+             preserveRatio="true">
+    <Image url="resources/icons/notification.png"/>
+  </ImageView>
+
+    <Button fx:id="communityButton"
+          layoutX="163" layoutY="121" 
+          onAction="#communityStarted"
+          text="Community" 
+          styleClass="txt-button"/>
+
+     <Button fx:id="yoursButton" 
+          layoutX="504" layoutY="121" 
+          onAction="#yoursStarted" 
+          text="Your contribution" 
+          styleClass="txt-button"/>
+
+    <ScrollPane fx:id="scrollPane" layoutX="24" layoutY="172"
+              prefWidth="798" prefHeight="426" styleClass="transparent-box">
+    <VBox fx:id="vBox" spacing="30"
+          prefWidth="772" prefHeight="426" 
+          styleClass="transparent-pane">
+    </VBox>
+  </ScrollPane>
+    
+    <VBox spacing="14" layoutX="858" layoutY="183">
+        <Button fx:id="addButton" layoutX="0" styleClass="select-box" alignment="CENTER" 
+                prefHeight="47" prefWidth="122.93" onAction="#contributeAlert">
+            <graphic>
+                <HBox spacing="3" alignment="CENTER_LEFT" >
+                    <Label prefWidth="8"/>
+                    <ImageView fitWidth="25.38" fitHeight="25.38">
+                        <image>
+                            <Image url="resources/icons/add.png" />
+                        </image>
+                    </ImageView>
+                    <Label text="Add" alignment="CENTER" prefHeight="25.38" />
+                </HBox>
+            </graphic>
+        </Button>
+        <Button fx:id="policyButton" layoutX="0" styleClass="select-box" alignment="CENTER" 
+                prefHeight="47" prefWidth="122.93" >
+            <graphic>
+                <HBox spacing="3" alignment="CENTER_LEFT" >
+                    <Label prefWidth="8"/>
+                    <ImageView fitWidth="25.38" fitHeight="25.38">
+                        <image>
+                            <Image url="resources/icons/policy.png" />
+                        </image>
+                    </ImageView>
+                    <Label text="Policy" alignment="CENTER" prefHeight="25.38" />
+                </HBox>
+            </graphic>
+        </Button>
+        <Button layoutX="0" styleClass="select-box" alignment="CENTER" 
+                prefHeight="47" prefWidth="122.93" onAction="#homeStarted">
+            <graphic>
+                <HBox spacing="3" alignment="CENTER_LEFT" >
+                    <Label prefWidth="8"/>
+                    <ImageView fitWidth="25.38" fitHeight="25.38">
+                        <image>
+                            <Image url="resources/icons/back.png" />
+                        </image>
+                    </ImageView>
+                    <Label text="Back" alignment="CENTER" prefHeight="25.38" />
+                </HBox>
+            </graphic>
+        </Button>
+    </VBox>
+
+    <Rectangle fx:id="rectangle"
+                layoutX="23" layoutY="32" 
+                width="778" 
+                style="-fx-fill: transparent;" />
+
+    <TextField fx:id="searchField" layoutX="36" layoutY="41" 
+                prefWidth="766" prefHeight="50" 
+                promptText="Search something" styleClass="search-field"
+                />
+
+    <VBox fx:id="suggestedList" layoutX="36" layoutY="99"
+            prefWidth="766" 
+            />
+            
+</AnchorPane>
+    

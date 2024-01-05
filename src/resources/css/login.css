@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Montserrat SemiBold";
+    src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat Italic";
+    src: url("../fonts/Montserrat-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat Light";
+    src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+}
+
+#anchorPane {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, 
+                    rgba(255, 150, 140, 0.6) 0%, 
+                    rgba(255, 150, 140, 0.6) 8.01%, 
+                    rgba(255, 77, 86, 0.6) 56.95%);
+}
+
+.pink-button {
+    -fx-background-radius: 15px;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #FF968C 0%, #FF968C 8.01%, #FF4D56 56.95%);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Montserrat SemiBold";
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+}
+
+.login-field {
+    -fx-background-color: #FFF; 
+    -fx-border-color: #E7E7E7; 
+    -fx-border-width: 4px; 
+    -fx-border-radius: 15px; 
+    -fx-background-radius: 15px; 
+    -fx-effect: dropshadow(gaussian, #E7E7E7, 0, 10, 0, 0);
+}
+
+.fixed-box {
+    -fx-background-radius: 30px;
+    -fx-fill: #fff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 0, 2, 0, 0);
+    -fx-arc-height: 30px;
+    -fx-arc-width: 30px;
+}
+
+.ques-box {
+    -fx-background-radius: 15px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 16.36px;
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+    -fx-font-family: 'Montserrat SemiBold'
+}
+
+.opt-box {
+    -fx-background-radius: 15px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 16.36px;
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+    -fx-border-color: #fff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+}
+
+.opt-box:hover {
+    -fx-background-radius: 15px;
+    -fx-border-color: #FF7568;
+    -fx-border-width: 4px;
+    -fx-border-radius: 15px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 16.36px;
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+}

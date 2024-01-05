@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import main.Constants?>
+
+<AnchorPane 
+  id = "anchorPane" 
+  prefHeight="640" prefWidth="1024" 
+  xmlns="http://javafx.com/javafx/8" 
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="main.UI.Controller.Screens.Translation.TranslationControl"
+  stylesheets="resources/css/translation.css">
+
+  <Text fx:id="langFrom"
+        layoutX="65" layoutY="55"
+        style="-fx-font-family: 'Montserrat SemiBold';
+               -fx-font-size: 18px;"></Text>
+
+  <Text fx:id="langTo"
+        layoutX="65" layoutY="363"
+        style="-fx-font-family: 'Montserrat SemiBold';
+               -fx-font-size: 18px;"></Text>
+
+  <TextArea fx:id="inp" styleClass="trans-box"
+            layoutX="65" layoutY="85" wrapText="true" 
+            prefHeight="180" prefWidth="703"
+            promptText="Type something..."/>
+
+  <TextFlow fx:id="out" 
+            layoutX="65" layoutY="393" 
+            prefHeight="180" prefWidth="703"
+            styleClass="trans-box"/>
+
+  <Button fx:id="switchButton" layoutX="504" layoutY="306" onAction="#switchLang" style="-fx-background-color: transparent;">
+    <graphic>
+        <ImageView fitWidth="29" fitHeight="29">
+            <image>
+                <Image url="resources/icons/switch.png" />
+            </image>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <Button fx:id="uploadButton" layoutX="330" layoutY="306" onAction="#uploadFile" style="-fx-background-color: transparent;">
+    <graphic>
+        <ImageView fitWidth="29" fitHeight="29">
+            <image>
+                <Image url="resources/icons/upload.png" />
+            </image>
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <VBox spacing="17" layoutX="835" layoutY="97">
+        <Button layoutX="0" styleClass="select-box" alignment="CENTER" 
+                prefHeight="55" prefWidth="130" onAction="#listen">
+            <graphic>
+                <HBox spacing="5" alignment="CENTER_LEFT" >
+                    <Label prefWidth="8"/>
+                    <ImageView fitWidth="25.38" fitHeight="25.38">
+                        <image>
+                            <Image url="resources/icons/sound.png" />
+                        </image>
+                    </ImageView>
+                    <Label text="Listen" alignment="CENTER" prefHeight="25.38" />
+                </HBox>
+            </graphic>
+        </Button>
+        <Button layoutX="0" styleClass="select-box" alignment="CENTER" 
+                prefHeight="55" prefWidth="130" >
+            <graphic>
+                <HBox spacing="5" alignment="CENTER_LEFT" >
+                    <Label prefWidth="8"/>
+                    <ImageView fitWidth="25.38" fitHeight="25.38">
+                        <image>
+                            <Image url="resources/icons/help.png" />
+                        </image>
+                    </ImageView>
+                    <Label text="Help" alignment="CENTER" prefHeight="25.38" />
+                </HBox>
+            </graphic>
+        </Button>
+        <Button layoutX="0" styleClass="select-box" alignment="CENTER" 
+                prefHeight="55" prefWidth="130" onAction="#homeStarted">
+            <graphic>
+                <HBox spacing="5" alignment="CENTER_LEFT" >
+                    <Label prefWidth="8"/>
+                    <ImageView fitWidth="25.38" fitHeight="25.38">
+                        <image>
+                            <Image url="resources/icons/back.png" />
+                        </image>
+                    </ImageView>
+                    <Label text="Back" alignment="CENTER" prefHeight="25.38" />
+                </HBox>
+            </graphic>
+        </Button>
+    </VBox>
+
+  <ImageView fx:id="image" fitWidth="286" fitHeight="286"
+              layoutX="761" layoutY="319"
+              preserveRatio="true">
+    <Image url="resources/image/catTea.png"/>
+  </ImageView>
+
+</AnchorPane>
+    

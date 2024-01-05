@@ -1,0 +1,33 @@
+#anchorPane {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, 
+                    rgba(255, 150, 140, 0.6) 0%, 
+                    rgba(255, 150, 140, 0.6) 8.01%, 
+                    rgba(255, 77, 86, 0.6) 56.95%);
+}
+
+.fixed-box {
+    -fx-background-radius: 30px;
+    -fx-fill: #fff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 0, 2, 0, 0);
+    -fx-arc-height: 30px;
+    -fx-arc-width: 30px;
+}
+
+.pink-button {
+    -fx-background-radius: 15px;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #FF968C 0%, #FF968C 8.01%, #FF4D56 56.95%);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Montserrat SemiBold";
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+}
+
+.grey-button {
+    -fx-background-radius: 15px;
+    -fx-background-color: #D9D9D9;
+    -fx-font-size: 14.22px;
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+    -fx-font-family: "Montserrat SemiBold";
+}

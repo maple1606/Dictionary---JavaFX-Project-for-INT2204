@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import main.Constants?>
+
+<AnchorPane 
+  id = "anchorPane" 
+  prefHeight="640" prefWidth="1024" 
+  xmlns="http://javafx.com/javafx/8" 
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="main.UI.Controller.Screens.Game.Result"
+  stylesheets="resources/css/result.css">
+
+    <Rectangle fx:id="rectangle" 
+                layoutX="78.93" layoutY="148.62" 
+                width="864" height="413.16" 
+                styleClass="fixed-box" />
+        
+    <ImageView fx:id="image" fitWidth="520.66" fitHeight="382.89"
+             layoutX="84.21" layoutY="171.77"
+             preserveRatio="true">
+        <Image url="resources/image/catResult.png"/>
+    </ImageView>
+
+    <Text fx:id="score" layoutX="136.0" layoutY="80.0"
+        style="-fx-font-size: 28.44px; -fx-font-weight: bold;"/> 
+
+    <Text fx:id="total" layoutX="136.0" layoutY="120.0"
+        style="-fx-font-size: 19.91px;"/> 
+
+    <Button  fx:id="quit" alignment="CENTER" 
+         layoutX="647.11" layoutY="355.56" 
+         mnemonicParsing="false" onAction="#homeStarted"
+         text="Quit" textAlignment="CENTER" 
+         prefHeight="54.04" prefWidth="166.4"
+         wrapText="true" styleClass="grey-button" />
+
+    <Button  fx:id="quit" alignment="CENTER" 
+         layoutX="647.11" layoutY="287.29" 
+         mnemonicParsing="false" onAction="#gameStarted"
+         text="Play again" textAlignment="CENTER" 
+         prefHeight="54.04" prefWidth="166.4"
+         wrapText="true" styleClass="pink-button" />
+    
+</AnchorPane>
+    

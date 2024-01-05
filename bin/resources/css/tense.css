@@ -1,0 +1,33 @@
+#anchorPane {
+    -fx-background-color: #f0f0f0;
+}
+
+.fixed-box {
+    -fx-background-radius: 30px;
+    -fx-fill: #fff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 0, 2, 0, 0);
+    -fx-arc-height: 30px;
+    -fx-arc-width: 30px;
+}
+
+.tense-box {
+    -fx-background-radius: 21.33px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-arc-height: 21.33px;
+    -fx-arc-width: 21.33px;
+    -fx-font-size: 16.36px;
+    -fx-font-family: "Montserrat SemiBold";
+    -fx-text-fill: rgba(0, 0, 0, 0.80);
+}
+
+.tense-box:focused {
+    -fx-background-radius: 21.33px;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #FF968C 0%, #FF968C 8.01%, #FF4D56 56.95%);
+    -fx-fill: linear-gradient(from 0% 0% to 100% 100%, #FF968C 0%, #FF968C 8.01%, #FF4D56 56.95%);
+    -fx-arc-height: 21.33px;
+    -fx-arc-width: 21.33px;
+    -fx-font-size: 16.36px;
+    -fx-font-family: "Montserrat SemiBold";
+    -fx-text-fill: white;
+}

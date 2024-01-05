@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import main.Constants?>
+
+<AnchorPane 
+  prefHeight="278" prefWidth="652" 
+  xmlns="http://javafx.com/javafx/8" 
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="main.UI.Controller.Alerts.ContributeAlert"
+  stylesheets="resources/css/alert.css"
+>
+
+  <Label text="Your turn to contribute your own definition!"
+        prefWidth="398" layoutX="45" layoutY="42" 
+        style="-fx-font-size: 15;"
+  />
+
+   <TextFlow 
+    layoutX="45" layoutY="105" 
+    prefHeight="44" prefWidth="470" styleClass="contribute-text-flow">
+    <children>
+        <Text text="Remember to be respectful and share valuable definitions. " />
+        <Text text="Avoid using hate speech or revealing personal information. " />
+    </children>
+</TextFlow>
+
+<HBox spacing="17" layoutX="196" layoutY="190">
+        <Button layoutX="0" styleClass="cancel-button" 
+                alignment="CENTER" onAction="#cancel"
+                prefHeight="47" prefWidth="122.93" text="Cancel"/>
+        <Button layoutX="0" styleClass="pink-button" 
+                alignment="CENTER" onAction="#contributeWord"
+                prefHeight="47" prefWidth="122.93" text="I understand"/>
+  </HBox>
+
+</AnchorPane>
+    

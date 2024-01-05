@@ -1,0 +1,72 @@
+#anchorPane {
+    -fx-background-color: #f0f0f0;
+}
+
+.pink-button {
+    -fx-background-radius: 15px;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #FF968C 0%, #FF968C 8.01%, #FF4D56 56.95%);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Montserrat SemiBold";
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+}
+
+.correct {
+    -fx-background-radius: 15px;
+    -fx-background-color: #70FF58;
+    -fx-fill: #70FF58;
+    -fx-font-size: 18px;
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+    -fx-border-color: #70FF58;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+}
+
+.wrong {
+    -fx-background-radius: 15px;
+    -fx-background-color: #F00;
+    -fx-fill: #F00;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 18px;
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+    -fx-border-color: #F00;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+}
+
+.ques-box {
+    -fx-background-radius: 15px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 16.36px;
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+    -fx-font-family: 'Montserrat SemiBold'
+}
+
+.opt-box {
+    -fx-background-radius: 15px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 16.36px;
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+    -fx-border-color: #fff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 15px;
+}
+
+.opt-box:hover {
+    -fx-background-radius: 15px;
+    -fx-border-color: #FF7568;
+    -fx-border-width: 4px;
+    -fx-border-radius: 15px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 16.36px;
+    -fx-arc-height: 15px;
+    -fx-arc-width: 15px;
+}

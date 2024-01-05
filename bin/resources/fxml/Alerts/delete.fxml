@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import main.Constants?>
+
+<AnchorPane 
+  prefHeight="278" prefWidth="652" 
+  xmlns="http://javafx.com/javafx/8" 
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="main.UI.Controller.Alerts.DeleteAlert"
+  stylesheets="resources/css/alert.css"
+>
+  <ImageView fitWidth="42" fitHeight="42"
+              layoutX="295" layoutY="22"
+              preserveRatio="true">
+      <Image url="resources/icons/warning.png"/>
+  </ImageView>
+
+  <Label fx:id="alertLabel" text="Delete this word?"
+        prefWidth="652" layoutY="82" alignment="CENTER" textAlignment="CENTER"
+        style="-fx-font-family: 'Montserrat SemiBold'; -fx-font-size: 17;"
+  />
+
+   <TextFlow 
+    layoutX="140" layoutY="130" 
+    prefHeight="42" prefWidth="396" styleClass="delete-text-flow">
+    <children>
+        <Text text="Once deleted, the word becomes invisible to all. " />
+        <Text text="Only administrators can undo this action. " />
+    </children>
+</TextFlow>
+
+<HBox spacing="17" layoutX="196" layoutY="202">
+        <Button layoutX="0" styleClass="cancel-button" 
+                alignment="CENTER" onAction="#cancel"
+                prefHeight="47" prefWidth="122.93" text="Cancel"/>
+        <Button layoutX="0" styleClass="pink-button" 
+                alignment="CENTER" onAction="#deleteWord"
+                prefHeight="47" prefWidth="122.93" text="Yes, delete it"/>
+  </HBox>
+
+</AnchorPane>
+    

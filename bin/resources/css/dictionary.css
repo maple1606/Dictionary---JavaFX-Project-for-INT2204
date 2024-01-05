@@ -1,0 +1,139 @@
+#anchorPane {
+    -fx-background-color: #f0f0f0;
+}
+
+#scrollPane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent; 
+    -fx-faint-focus-color: transparent;
+}
+
+.scroll-pane:vertical {
+    -fx-opacity: 4.0;
+}
+
+.fixed-box {
+    -fx-background-radius: 30px;
+    -fx-fill: #fff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 0, 2, 0, 0);
+    -fx-arc-height: 30px;
+    -fx-arc-width: 30px;
+}
+
+.pink-button {
+    -fx-background-radius: 12px;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #FF968C 0%, #FF968C 8.01%, #FF4D56 56.95%);
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-family: "Montserrat SemiBold";
+    -fx-arc-height: 12px;
+    -fx-arc-width: 12px;
+}
+
+.search-field {
+    -fx-background-color: #DCDBDB; 
+    -fx-fill: #DCDBDB;
+    -fx-arc-height: 20px;
+    -fx-arc-width: 20px;
+    -fx-background-radius: 20px; 
+    -fx-effect: dropshadow(gaussian, #E7E7E7, 0, 10, 0, 0);
+}
+
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-family: "Montserrat SemiBold";
+}
+
+.selected-menu-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: rgba(0, 0, 0, 0.8);
+    -fx-font-size: 12px;
+    -fx-font-family: "Montserrat SemiBold";
+}
+
+.noheader .column-header-background {
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+
+.noborder .table-row-cell {
+    -fx-table-cell-border-color: transparent;
+    -fx-background-color: transparent;
+ }
+
+.transparent-box {
+    -fx-background-color: transparent; 
+    -fx-font-size: 15px;
+    -fx-alignment: baseline-left; 
+}
+
+.transparent-box:hover {
+    -fx-background-color: #D9D9D9; 
+    -fx-font-size: 16.5px;
+    -fx-arc-width: 20px;
+    -fx-arc-height: 20px;
+    -fx-background-radius: 20px;
+    -fx-alignment: baseline-left; 
+}
+
+.grey-box {
+    -fx-background-radius: 20px;
+    -fx-background-color: #f0f0f0;
+    -fx-fill: #f0f0f0;
+    -fx-arc-height: 20px;
+    -fx-arc-width: 20px;
+}
+
+.select-box {
+    -fx-background-radius: 22px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-arc-height: 22px;
+    -fx-arc-width: 22px;
+    -fx-border-color: #fff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 22px;
+}
+
+.select-box:hover {
+    -fx-background-radius: 22px;
+    -fx-border-color: #FF7568;
+    -fx-border-width: 4px;
+    -fx-border-radius: 22px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-arc-height: 22px;
+    -fx-arc-width: 22px;
+}
+
+.text-box {
+    -fx-background-radius: 22px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 18px;
+    -fx-arc-height: 22px;
+    -fx-arc-width: 22px;
+    -fx-border-color: #fff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 22px;
+    -fx-font-family: "Montserrat SemiBold";
+}
+
+.text-box:hover {
+    -fx-background-radius: 22px;
+    -fx-border-color: #FF7568;
+    -fx-border-width: 4px;
+    -fx-border-radius: 22px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 18px;
+    -fx-arc-height: 22px;
+    -fx-arc-width: 22px;
+    -fx-font-family: "Montserrat SemiBold";
+}

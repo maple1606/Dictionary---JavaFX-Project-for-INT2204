@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import main.Constants?>
+
+<AnchorPane 
+  fx:id = "anchorPane" 
+  prefHeight="640" prefWidth="1024" 
+  xmlns="http://javafx.com/javafx/8" 
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="main.UI.Controller.Screens.Topic.TopicControl"
+  stylesheets="resources/css/topic.css"
+  >
+
+    <Button layoutX="17.78" layoutY="17.78" onAction="#homeStarted"
+            style="-fx-background-color: transparent;">
+        <graphic>
+            <ImageView fitWidth="42.67" fitHeight="42.67">
+                <Image url="resources/icons/chevron.png" />
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <Button fx:id="vocab" onAction="#lookUp"
+              layoutX="73" layoutY="153" 
+              prefWidth="416.19" prefHeight="249.71" 
+              styleClass="text-box" />
+
+    <ImageView fx:id="vocabImage" fitWidth="416.19" fitHeight="249.71"
+             layoutX="535" layoutY="153"
+             preserveRatio="true">
+    </ImageView>
+
+    <Button onAction="#toLeft"
+            layoutX="341" layoutY="487"
+            style="-fx-background-color: transparent; -fx-fill: transparent;">
+        <graphic>
+            <ImageView fitWidth="40" fitHeight="40">
+                <Image url="resources/icons/left.png" />
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <Button onAction="#toRight"
+            layoutX="629" layoutY="487"
+            style="-fx-background-color: transparent; -fx-fill: transparent;">
+        <graphic>
+            <ImageView fitWidth="40" fitHeight="40">
+                <Image url="resources/icons/right.png" />
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <Text fx:id="index" layoutX="490" layoutY="520"
+          style="-fx-font-size: 20px; -fx-text-fill: rgba(0, 0, 0, 0.8);" />
+</AnchorPane>
+    

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import main.Constants?>
+
+<AnchorPane 
+  fx:id = "anchorPane" 
+  prefHeight="640" prefWidth="1024" 
+  xmlns="http://javafx.com/javafx/8" 
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="main.UI.Controller.Screens.Dashboard.DashboardControl"
+  stylesheets="resources/css/dictionary.css"
+  >
+  <ImageView fx:id="image" fitWidth="27.02" fitHeight="27.02"
+             layoutX="222.58" layoutY="38.4"
+             preserveRatio="true">
+    <Image url="resources/icons/user.png"/>
+  </ImageView>
+
+  <ImageView fx:id="noti" fitWidth="35.56" fitHeight="36.56"
+             layoutX="867" layoutY="34"
+             preserveRatio="true">
+    <Image url="resources/icons/notification.png"/>
+  </ImageView>
+
+  <Text fx:id="greeting" layoutX="257.42" layoutY="46.4"
+        style="-fx-font-size: 14.22px;"/>
+
+   <Text fx:id="usrId" layoutX="257.42" layoutY="66.31"
+        style="-fx-font-size: 9.96px;"/>
+
+  <ImageView fx:id="image" fitWidth="189.16" fitHeight="640"
+             layoutX="0.0" layoutY="0.0"
+             preserveRatio="true">
+    <Image url="resources/image/dashboard.png"/>
+  </ImageView>
+
+  <Rectangle 
+              layoutX="226.13" layoutY="108.06" 
+              width="428.8" height="492.83" 
+              styleClass="fixed-box" />
+
+  <VBox spacing="32" layoutX="44" layoutY="105.09" >
+    <Button fx:id="homeButton"
+            prefHeight="15.0" prefWidth="120"
+            styleClass="menu-button">
+        <graphic>
+            <HBox spacing="12" alignment="CENTER_LEFT" >
+                <ImageView fitWidth="17.07" fitHeight="17.07">
+                    <image>
+                        <Image url="resources/icons/home-dark.png" />
+                    </image>
+                </ImageView>
+                <Label text="Dashboard" prefHeight="17.07"
+                       styleClass="selected-menu-button" />
+            </HBox>
+        </graphic>
+    </Button>
+
+    <Button fx:id="exploreButton" onAction="#exploreStarted"
+            prefHeight="15.0" prefWidth="120"
+            styleClass="menu-button">
+        <graphic>
+            <HBox spacing="12" alignment="CENTER_LEFT" >
+                <ImageView fitWidth="17.07" fitHeight="17.07">
+                    <image>
+                        <Image url="resources/icons/explore.png" />
+                    </image>
+                </ImageView>
+                <Label text="Explore" prefHeight="17.07" 
+                       styleClass="menu-button"/>
+            </HBox>
+        </graphic>
+    </Button>
+    
+    <Button fx:id="translateButton" onAction="#translateStarted"
+            prefHeight="15.0" prefWidth="120"
+            styleClass="menu-button">
+        <graphic>
+            <HBox spacing="12" alignment="CENTER_LEFT" >
+                <ImageView fitWidth="17.07" fitHeight="17.07">
+                    <image>
+                        <Image url="resources/icons/translate.png" />
+                    </image>
+                </ImageView>
+                <Label text="Translation" prefHeight="17.07"
+                       styleClass="menu-button" />
+            </HBox>
+        </graphic>
+    </Button>
+    
+    <Button fx:id="gameButton" onAction="#gameStarted"
+            prefHeight="15.0" prefWidth="120"
+            styleClass="menu-button">
+        <graphic>
+            <HBox spacing="12" alignment="CENTER_LEFT" >
+                <ImageView fitWidth="17.07" fitHeight="17.07">
+                    <image>
+                        <Image url="resources/icons/game.png" />
+                    </image>
+                </ImageView>
+                <Label text="Game" prefHeight="17.07" 
+                       styleClass="menu-button"/>
+                </HBox>
+            </graphic>
+        </Button>
+    </VBox>
+
+    <Button fx:id="logOutButton" onAction="#navigate"
+            prefHeight="15.0" prefWidth="120"
+            styleClass="menu-button" layoutX="44" layoutY="579.56">
+        <graphic>
+            <HBox spacing="12" alignment="CENTER_LEFT" >
+                <ImageView fitWidth="17.07" fitHeight="17.07">
+                    <image>
+                        <Image url="resources/icons/logout.png" />
+                    </image>
+                </ImageView>
+                <Label text="Log out" prefHeight="17.07" 
+                       styleClass="menu-button"/>
+            </HBox>
+        </graphic>
+    </Button>
+
+  <ImageView fx:id="image" fitWidth="293.69" fitHeight="492.83"
+             layoutX="690.49" layoutY="108.06"
+             preserveRatio="true">
+    <Image url="resources/image/leaderboard.png"/>
+  </ImageView>
+
+  <TableView fx:id="leaderboardTable" prefHeight="462.83" prefWidth="233.69"
+             layoutX="770.82" layoutY="168.67">
+    <columns>
+      <TableColumn fx:id="nameColumn" text="Name" prefWidth="100">
+        <cellValueFactory>
+          <PropertyValueFactory property="displayName" />
+        </cellValueFactory>
+      </TableColumn>
+      <TableColumn fx:id="scoreColumn" text="Score" prefWidth="100">
+        <cellValueFactory>
+          <PropertyValueFactory property="score" />
+        </cellValueFactory>
+      </TableColumn>
+    </columns>
+  </TableView>
+
+  <ImageView fx:id="topicAvatar" fitWidth="307.36" fitHeight="228.98"
+             layoutX="287" layoutY="143.27"
+             preserveRatio="true">
+  </ImageView>
+
+  <Rectangle 
+              layoutX="258.84" layoutY="393.96" 
+              width="362.67" height="180.62" 
+              styleClass="grey-box" />
+
+    <Label fx:id="topicName" layoutX="370" layoutY="412" 
+           prefHeight="11" prefWidth="136"
+           alignment="CENTER" textAlignment="CENTER" 
+           style="-fx-font-size: 15.64px; -fx-font-family: 'Montserrat SemiBold'; -fx-text-fill: rgba(0, 0, 0, 0.8);"/>
+
+    <TextFlow fx:id="topicDescription" 
+        layoutX="301" layoutY="464.36"
+        textAlignment="CENTER" 
+        prefWidth="280" prefHeight="25"
+        style="-fx-font-size: 12.09px; -fx-font-family: 'Montserrat Light'; -fx-text-fill: rgba(0, 0, 0, 0.8);"/>
+
+
+    <Button fx:id="practice" alignment="CENTER" 
+          layoutX="390.84" layoutY="529.31"
+          mnemonicParsing="false" onAction="#practiceStarted"
+          text="Practice" textAlignment="CENTER" 
+          prefWidth="99.42" prefHeight="27.18"
+          wrapText="true" styleClass="pink-button"/>
+
+    
+    <Button onAction="#toLeft"
+            layoutX="244.84" layoutY="249.6"
+            style="-fx-background-color: transparent;">
+        <graphic>
+            <ImageView fitWidth="21.33" fitHeight="21.33">
+                <Image url="resources/icons/left.png" />
+            </ImageView>
+        </graphic>
+    </Button>
+
+    <Button onAction="#toRight"
+            layoutX="600.18" layoutY="249.6"
+            style="-fx-background-color: transparent;">
+        <graphic>
+            <ImageView fitWidth="21.33" fitHeight="21.33">
+                <Image url="resources/icons/right.png" />
+            </ImageView>
+        </graphic>
+    </Button>
+
+  <Rectangle fx:id="rectangle"
+              layoutX="493" layoutY="26" 
+              width="356" 
+              style="-fx-fill: transparent;" />
+
+  <TextField fx:id="searchField" layoutX="498.0" layoutY="34.13" 
+             prefWidth="341.33" prefHeight="36.61" 
+             promptText="Search something" styleClass="search-field"
+             />
+
+  <VBox fx:id="suggestedList" layoutX="498.78" layoutY="81"
+        prefWidth="341.33"/>
+</AnchorPane>
+    

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import main.Constants?>
+
+<AnchorPane 
+  id = "anchorPane" 
+  prefHeight="640" prefWidth="1024" 
+  xmlns="http://javafx.com/javafx/8" 
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="main.UI.Controller.Screens.LogIn.SignUp"
+  stylesheets="resources/css/login.css">
+
+     <Rectangle fx:id="rectangle" 
+                layoutX="193.42" layoutY="187.73" 
+                width="642.84" height="364.09" 
+                styleClass="fixed-box" />
+                
+    <ImageView fx:id="image" fitWidth="464.36" fitHeight="184"
+                layoutX="279.47" layoutY="26.0"
+                preserveRatio="true">
+        <Image url="resources/image/catHello.png"/>
+    </ImageView>
+
+    <TextField fx:id="usrname" 
+            layoutX="344.89" layoutY="298.67" 
+            prefHeight="49.78" prefWidth="334.22"
+            promptText="Username" styleClass="login-field"/>
+
+     <PasswordField fx:id="pwd" 
+            layoutX="344.89" layoutY="371.2" 
+            prefHeight="49.78" prefWidth="334.22"
+            promptText="Password" styleClass="login-field"/>
+
+     <Button fx:id="signInB" alignment="CENTER" 
+          layoutX="328.53" layoutY="234.67" 
+          mnemonicParsing="false" prefHeight="27.02" prefWidth="183.47"
+          text="Sign in" textAlignment="CENTER" onAction="#navigate" 
+          wrapText="true" style="-fx-background-color: transparent; 
+                                 -fx-text-fill: black;
+                                 -fx-font-size: 16.36px;
+                                 -fx-font-family: 'Montserrat SemiBold'"/>
+
+     <Button fx:id="signUpB" alignment="CENTER" 
+          layoutX="512" layoutY="234.67" 
+          mnemonicParsing="false" prefHeight="27.02" prefWidth="183.47"
+          text="Sign up" textAlignment="CENTER" 
+          wrapText="true" style="-fx-background-color: transparent; 
+                                 -fx-text-fill: #FF4D56;
+                                 -fx-font-size: 16.36px;
+                                 -fx-font-family: 'Montserrat SemiBold'"/>
+
+     <Button fx:id="logInButton" alignment="CENTER" 
+          layoutX="451" layoutY="472" onAction="#signUp"
+          mnemonicParsing="false" prefHeight="36.58" prefWidth="128.41"
+          text="Sign up" textAlignment="CENTER" 
+          wrapText="true" styleClass="pink-button"/>
+
+</AnchorPane>
+    

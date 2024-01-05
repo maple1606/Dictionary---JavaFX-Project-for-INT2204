@@ -1,0 +1,79 @@
+#anchorPane {
+    -fx-background-color: #f0f0f0;
+}
+
+#scrollPane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent; 
+    -fx-faint-focus-color: transparent;
+}
+
+.txt-button {
+    -fx-background-color: transparent; 
+    -fx-text-fill: black;
+    -fx-font-size: 18px;
+    -fx-font-family: 'Montserrat SemiBold'
+}
+
+.search-field {
+    -fx-background-color: #DCDBDB; 
+    -fx-fill: #DCDBDB;
+    -fx-arc-height: 20px;
+    -fx-arc-width: 20px;
+    -fx-background-radius: 20px; 
+    -fx-effect: dropshadow(gaussian, #E7E7E7, 0, 10, 0, 0);
+}
+
+.transparent-pane {
+    -fx-fill: #f0f0f0;
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #f0f0f0;
+}
+
+.select-box {
+    -fx-background-radius: 22px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-arc-height: 22px;
+    -fx-arc-width: 22px;
+    -fx-border-color: #fff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 22px;
+}
+
+.select-box:hover {
+    -fx-background-radius: 22px;
+    -fx-border-color: #FF7568;
+    -fx-border-width: 4px;
+    -fx-border-radius: 22px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-arc-height: 22px;
+    -fx-arc-width: 22px;
+}
+
+.grey-box {
+    -fx-background-radius: 20px;
+    -fx-background-color: #f0f0f0;
+    -fx-fill: #f0f0f0;
+    -fx-arc-height: 20px;
+    -fx-arc-width: 20px;
+}
+
+.transparent-box {
+    -fx-background-color: transparent; 
+    -fx-font-size: 15px;
+    -fx-alignment: baseline-left; 
+}
+
+.transparent-box:hover {
+    -fx-background-color: #D9D9D9; 
+    -fx-font-size: 16.5px;
+    -fx-arc-width: 20px;
+    -fx-arc-height: 20px;
+    -fx-background-radius: 20px;
+    -fx-alignment: baseline-left; 
+}

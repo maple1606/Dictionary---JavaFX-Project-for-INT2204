@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import main.Constants?>
+
+<AnchorPane 
+  fx:id = "anchorPane" 
+  prefHeight="640" prefWidth="1024" 
+  xmlns="http://javafx.com/javafx/8" 
+  xmlns:fx="http://javafx.com/fxml"
+  fx:controller="main.UI.Controller.Screens.Dictionary.EditControl"
+  stylesheets="resources/css/contribute.css"
+>
+
+  <TextField fx:id="wordField" layoutX="55" layoutY="37" 
+                prefWidth="920" prefHeight="34" editable="false"
+                promptText="Word" styleClass="word-field"
+  />
+
+  <HBox spacing="17.51" layoutX="266" layoutY="120">
+        <Button layoutX="0" styleClass="select-box" alignment="CENTER" 
+                prefHeight="42.61" prefWidth="111.45" onAction="#addDefinition">
+            <graphic>
+                <HBox spacing="6" alignment="CENTER_LEFT" >
+                    <Label prefWidth="7"/>
+                    <ImageView fitWidth="21.32" fitHeight="21.32">
+                        <image>
+                            <Image url="resources/icons/add.png" />
+                        </image>
+                    </ImageView>
+                    <Label text="Add" alignment="CENTER" prefHeight="21.32" />
+                </HBox>
+            </graphic>
+        </Button>
+        <Button layoutX="0" styleClass="select-box" alignment="CENTER" 
+                prefHeight="42.61" prefWidth="111.45" onAction="#deleteAlert">
+            <graphic>
+                <HBox spacing="6" alignment="CENTER_LEFT" >
+                    <Label prefWidth="6"/>
+                    <ImageView fitWidth="21.32" fitHeight="21.32">
+                        <image>
+                            <Image url="resources/icons/trash.png" />
+                        </image>
+                    </ImageView>
+                    <Label text="Delete" alignment="CENTER" prefHeight="21.32" />
+                </HBox>
+            </graphic>
+        </Button>
+        <Button fx:id="backButton" layoutX="0" styleClass="select-box" alignment="CENTER" 
+                prefHeight="42.61" prefWidth="111.45" >
+            <graphic>
+                <HBox spacing="6" alignment="CENTER_LEFT" >
+                    <Label prefWidth="6"/>
+                    <ImageView fitWidth="21.32" fitHeight="21.32">
+                        <image>
+                            <Image url="resources/icons/back.png" />
+                        </image>
+                    </ImageView>
+                    <Label text="Back" alignment="CENTER" prefHeight="21.32" />
+                </HBox>
+            </graphic>
+        </Button>
+        <Button layoutX="0" styleClass="pink-button" alignment="CENTER" 
+                prefHeight="42.61" prefWidth="111.45" onAction="#saveWord">
+            <graphic>
+                <HBox spacing="6" alignment="CENTER_LEFT" >
+                    <Label prefWidth="6"/>
+                    <ImageView fitWidth="21.32" fitHeight="21.32">
+                        <image>
+                            <Image url="resources/icons/save.png" />
+                        </image>
+                    </ImageView>
+                    <Label text="Save" alignment="CENTER" prefHeight="21.32"
+                           style="-fx-text-fill: #fff;" />
+                </HBox>
+            </graphic>
+        </Button>
+    </HBox>
+
+  <ScrollPane fx:id="scrollPane" layoutX="39" layoutY="187"
+              prefWidth="960" prefHeight="415.71" styleClass="transparent-box">
+    <VBox fx:id="vBox" spacing="30"
+          prefWidth="933" prefHeight="415.71" 
+          styleClass="transparent-box">
+    </VBox>
+  </ScrollPane>
+  
+</AnchorPane>
+    

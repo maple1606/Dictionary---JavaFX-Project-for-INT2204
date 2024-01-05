@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "vmArgs": "--module-path /home/maple/Downloads/openjfx-17.0.8_linux-x64_bin-sdk/javafx-sdk-17.0.8/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "App",
+            "projectName": "dictionary-final_858a02f1"
+        }
+    ]
+}

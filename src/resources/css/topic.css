@@ -1,0 +1,29 @@
+#anchorPane {
+    -fx-background-color: #f0f0f0;
+}
+
+.text-box {
+    -fx-background-radius: 20px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 25px;
+    -fx-arc-height: 20px;
+    -fx-arc-width: 20px;
+    -fx-border-color: #fff;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-font-family: "Montserrat SemiBold";
+}
+
+.text-box:hover {
+    -fx-background-radius: 20px;
+    -fx-border-color: #FF7568;
+    -fx-border-width: 4px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 25px;
+    -fx-arc-height: 20px;
+    -fx-arc-width: 20px;
+    -fx-font-family: "Montserrat SemiBold";
+}
