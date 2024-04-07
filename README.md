@@ -12,7 +12,10 @@ A Java-based English learning app featuring a user-friendly interface powered by
 
 - Before cloning this repository, follow [this tutorial](https://www.youtube.com/watch?v=AubJaosfI-0&t=388s&ab_channel=BoostMyTool) for setting up.
 - Clone this project
-  ```git clone https://github.com/maple1606/LexiCatResource---JavaFX-Project-for-INT2204.git```
+  
+  ```
+  git clone https://github.com/maple1606/LexiCatResource---JavaFX-Project-for-INT2204.git
+  ```
 
 ## Features
 
